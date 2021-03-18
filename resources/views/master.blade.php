@@ -62,6 +62,9 @@
                         <li><a href="{{ url('/') }}" class="lk-dashboard"><i class="fas fa-tachometer-alt "></i> Dashboard</a></li>
                         <div class="divider"></div>
 
+                        <li><a href="/blog/all" class="lk-users"><i class="fas fa-user"></i> Blog</a></li>
+                        <div class="divider"></div>
+
                         <li><a href="/users/all" class="lk-users"><i class="fas fa-user"></i> Usuarios</a></li>
                         <div class="divider"></div>
                         
@@ -71,7 +74,7 @@
                                 Menu   
                                 <i class="fas fa-sort-down"></i>
                             </a>
-                        </li>
+                        
                             <ul class="collapse list-unstyled" id="pageSubmenu" style="padding-left: 10px">
                                 <li>
                                     <a class="lk-Institutions lk-edit_institution" href="#"><i class="fas fa-briefcase"></i> Ejemplo1</a>
@@ -83,7 +86,8 @@
                                     <a href="#"><i class="fas fa-rocket"></i> Ejemplo3</a>
                                 </li>
                             </ul>
-
+                        </li>       
+                        
                         <div class="divider"></div>
 
                         <li><a href="#" class="lk-category lk-category_edit lk-sub_category lk-sub_category_edit"><i class="fas fa-list"></i> Menu2</a></li>

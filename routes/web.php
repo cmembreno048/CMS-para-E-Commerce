@@ -23,3 +23,9 @@ Route::prefix('/users')->group(function () {
     Route::get('/{value}', 'AdminUsersController@getUsers')->name('users_view');
     Route::get('/profile/{id}', 'AdminUsersController@getUsersProfile')->name('users_profile');
 });
+
+Route::prefix('/blog')->group(function () {
+    Route::get('/{value}', 'AdminBlogController@getBlog')->name('blog_view');
+    Route::get('/edit/{id}', 'AdminBlogController@getBlogEdit')->name('blog_Edit');
+    Route::delete('/delete/{id}', 'AdminBlogController@getBlogEdit')->name('blog_Edit');
+});

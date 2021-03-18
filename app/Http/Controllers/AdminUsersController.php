@@ -19,7 +19,6 @@ class AdminUsersController extends Controller
         return view('user.crud', ['users' => User::where('user_state', $value)->get()]);
     }
 
-
     public function getUsersProfile($id){
 
         return view('user.profile', ['user' => User::find( $id)]);

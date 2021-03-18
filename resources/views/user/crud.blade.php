@@ -70,7 +70,7 @@
                                     
                                         <td>
                                             @if($user->id != Auth::id())
-                                                <a data-toggle="tooltip" data-placement="top" title="Perfil el usuario" href="{{url('/users/profile/'.$user->id)}}" ><i class="fas fa-cog"></i></a>
+                                                <a data-toggle="tooltip" data-placement="top" title="Perfil del usuario" href="{{url('/users/profile/'.$user->id)}}" ><i class="fas fa-cog"></i></a>
                                             @endif
                                         </td>
                                     
