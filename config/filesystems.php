@@ -41,6 +41,10 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
+        'uploadPbl' => [
+            'driver' => 'local',
+            'root' => '/home/ingelmec/Developer/CDN/platform/blog/',
+        ],
 
         's3' => [
             'driver' => 's3',

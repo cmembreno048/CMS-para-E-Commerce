@@ -25,7 +25,12 @@ Route::prefix('/users')->group(function () {
 });
 
 Route::prefix('/blog')->group(function () {
+
     Route::get('/{value}', 'AdminBlogController@getBlog')->name('blog_view');
-    Route::get('/edit/{id}', 'AdminBlogController@getBlogEdit')->name('blog_Edit');
+    Route::prefix('/edit')->group(function () {
+        Route::get('/{id}', 'AdminBlogController@getBlogEdit')->name('blog_Edit');
+        Route::post('/{id}', 'AdminBlogController@postBlogEdit')->name('blog_Edit');
+    });
     Route::delete('/delete/{id}', 'AdminBlogController@getBlogEdit')->name('blog_Edit');
+
 });

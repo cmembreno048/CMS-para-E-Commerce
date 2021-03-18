@@ -50,7 +50,9 @@
                     <tbody>
                         @foreach($blogs as $blog)
                             <tr>   
-                                <td>{{ $blog->id }}</td>
+                                <td>
+                                    {{ $blog->id }}
+                                </td>
                                 <td>
                                     {{ $blog->title }}
                                 </td>
@@ -59,14 +61,10 @@
                                 </td>
                                 <div class="obs">
                                     <td>
-                                        @if($blog->id != Auth::id())
-                                            <a data-toggle="tooltip" data-placement="top" title="Editar pubicación" href="{{url('/blog/edit/'.$blog->id)}}" ><i class="fas fa-cog"></i></a>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if($blog->id != Auth::id())
-                                            <a data-toggle="tooltip" data-placement="top" title="Eliminar pubicación" href="{{url('/blog/delete/'.$blog->id)}}" ><i class="fas fa-cog"></i></a>
-                                        @endif
+                                       
+                                        <a data-toggle="tooltip" data-placement="top" title="Editar publicación" href="{{url('/blog/edit/'.$blog->id)}}" ><i class="fas fa-cog"></i></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Eliminar publicación" href="{{url('/blog/delete/'.$blog->id)}}" ><i class="fas fa-trash"></i></a>
+                                       
                                     </td>
                                 </div>
                             </tr>
@@ -77,6 +75,4 @@
         </div>
     </div>
 
-@stop
-@section('scripts')
 @stop
