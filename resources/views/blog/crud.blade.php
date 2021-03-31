@@ -17,13 +17,17 @@
                 
             </div>
             <div class="inside">
-                
+                <a class="btn btn-two  float-left" style="font-size: 0.9em" href="{{url('/blog/add/a')}}">
+                    <i class="fas fa-plus"></i> Crear publicación
+                </a>
                   <div class="row justify-content-between">
                     <div class="col-4">
                      
                     </div>
                     <div class="col-4" style="margin-right: 25px">
+                        
                         <div class="dropdown">
+                            
                             <a class="btn btn-two dropdown-toggle rigth" style="font-size: 0.9em" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-filter"></i> Filtrar búsqueda 
                             </a>
@@ -57,7 +61,7 @@
                                     {{ $blog->title }}
                                 </td>
                                 <td>
-                                    {{ $blog->description}}
+                                    {!! $blog->description !!}
                                 </td>
                                 <div class="obs">
                                     <td>

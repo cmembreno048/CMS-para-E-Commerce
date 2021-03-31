@@ -75,7 +75,19 @@
                                         <p>{{ $errors->first('video') }}</p>         
                                     </div>
                                 @endif
-                                </div>    
+                                </div> 
+                                <div class="col-md-6">
+                                    <label for="document_blog">Subir un Documentos</label>
+                                    <div class="custom-file">
+                                        {!! Form::file('document_blog', ['class' =>'custom-file-input', 'id'=>"document_blog", "accept"=>"application/pdf"]) !!}
+                                        <label class="custom-file-label" for="customFile"><i class="fas fa-file-alt"></i></label>
+                                    </div>
+                                    @if ($errors->has('document_blog'))
+                                        <div class="alert alert-danger mtop16">    
+                                            <p>{{ $errors->first('document_blog') }}</p>         
+                                        </div>
+                                    @endif
+                                </div>     
                             </div>
                             <div class="row mtop16">
                                 <div class="col-md-12">

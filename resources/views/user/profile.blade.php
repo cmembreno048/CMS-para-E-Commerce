@@ -2,7 +2,7 @@
 @section('title', 'Perfil usuarios')
 @section('breadcrumb')
 <li class="breadcrumb-item">
-    <a href="{{ url('/users/200') }}" class="nav-link">
+    <a href="{{ url('/users/all') }}" class="nav-link">
         <i class="fas fa-users"></i> Usuarios</a>
 </li>
 <li class="breadcrumb-item">

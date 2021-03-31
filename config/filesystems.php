@@ -43,7 +43,11 @@ return [
         ],
         'uploadPbl' => [
             'driver' => 'local',
-            'root' => '/home/ingelmec/Developer/CDN/platform/blog/',
+            'root' => '/home/ingelmec2/Developer/CDN/platform/blog/',
+        ],
+        'uploadDocuments' => [
+            'driver' => 'local',
+            'root' => '/home/ingelmec2/Developer/CDN/platform/documents/',
         ],
 
         's3' => [
